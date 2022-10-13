@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url(../fonts/Figtree-VariableFont_wght.ttf) format('truetype-variations');
+  font-weight: 1 999;
+}
+
+:root {
+  --site-font: 'Figtree';
+  --secondary-color: #caebf2;
+  --light-neutral-color: #efefef;
+  --medium-neutral-color: #707070;
+  --dark-neutral-color: #4a4a4a;
+}
+
+html {
+  font-size: 18px;
+  font-family: var(--site-font);
+}
+
+body {
+  background-color: var(--light-neutral-color);
+  color: var(--dark-neutral-color);
+}
+
+body > * {
+  padding: 2rem;
+}
+
+header {
+  min-height: 20vh;
+  display: flex;
+  background-color: var(--secondary-color);
+}
+
+header h1 {
+  color: var(--medium-neutral-color);
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+  background-color: white;
+  box-shadow: 0 0 5px var(--medium-neutral-color);
+  border-radius: 0.2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  object-fit: cover;
+}
+
+.about-box {
+  background-color: white;
+  box-shadow: 0 0 5px var(--medium-neutral-color);
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+/* To do: wavy background transition, red about me question icon overlapping the about box on the right */
