@@ -61,6 +61,7 @@ header h1 {
 }
 
 .headshot {
+  background-color: var(--light-neutral-color);
   object-fit: cover;
   z-index: 1;
   box-shadow: 0 0 5px var(--medium-neutral-color);
