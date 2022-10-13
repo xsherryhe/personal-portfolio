@@ -7,8 +7,9 @@
 :root {
   --site-font: 'Figtree';
   --secondary-color: #caebf2;
+  --tertiary-color: #ff3b3f;
   --light-neutral-color: #efefef;
-  --medium-neutral-color: #707070;
+  --medium-neutral-color: #666;
   --dark-neutral-color: #4a4a4a;
 }
 
@@ -28,19 +29,24 @@ body > * {
 
 header {
   min-height: 20vh;
-  display: flex;
   background-color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--medium-neutral-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 header h1 {
+  flex: 1 1 0;
   color: var(--medium-neutral-color);
   font-size: 4.5rem;
   font-weight: 900;
-  margin-bottom: 0;
-  background-color: white;
-  box-shadow: 0 0 5px var(--medium-neutral-color);
+  margin: 0;
+  background-color: var(--light-neutral-color);
+  box-shadow: 0 0 5px inset var(--medium-neutral-color);
   border-radius: 0.2rem;
   padding: 1rem;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,13 +54,32 @@ header h1 {
 
 .headshot {
   object-fit: cover;
+  z-index: 1;
+  box-shadow: 0 0 5px var(--medium-neutral-color);
+  border-radius: 0.2rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
 }
 
 .about-box {
   background-color: white;
   box-shadow: 0 0 5px var(--medium-neutral-color);
   border-radius: 0.2rem;
-  padding: 1rem;
+  padding: 1rem 5rem 1rem 1.5rem;
 }
 
-/* To do: wavy background transition, red about me question icon overlapping the about box on the right */
+.about-icon {
+  z-index: 1;
+  width: 8rem;
+  margin-left: -5rem;
+  transform: rotate(10deg);
+  padding: 10px;
+  background-color: white;
+  border: var(--secondary-color) 3px solid;
+  border-radius: 50%;
+}
+
+/* To do: wavy background transition? */
