@@ -27,13 +27,21 @@ body > * {
   padding: 2rem;
 }
 
+.stage-left {
+  transform: translateX(-200%);
+}
+
+.stage-right {
+  transform: translateX(200%);
+}
+
 header {
   min-height: 20vh;
   background-color: var(--secondary-color);
   box-shadow: 0 0 5px var(--medium-neutral-color);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 header h1 {
@@ -57,6 +65,7 @@ header h1 {
   z-index: 1;
   box-shadow: 0 0 5px var(--medium-neutral-color);
   border-radius: 0.2rem;
+  transition: transform 0.5s ease-out 0.25s;
 }
 
 .about {
@@ -64,7 +73,9 @@ header h1 {
   align-items: center;
 }
 
-.about-box {
+.about {
+  transition: transform 0.5s ease-out 0.75s;
+}
   background-color: white;
   box-shadow: 0 0 5px var(--medium-neutral-color);
   border-radius: 0.2rem;
