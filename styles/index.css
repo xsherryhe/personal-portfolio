@@ -64,53 +64,68 @@ header h1 {
   background-color: var(--light-neutral-color);
   object-fit: cover;
   z-index: 1;
-  box-shadow: 0 0 5px var(--medium-neutral-color);
+  box-shadow: 0 0 5px inset var(--medium-neutral-color);
   border-radius: 0.2rem;
   transition: transform 0.5s ease-out 0.25s;
 }
 
 .about, .work {
   display: flex;
-  align-items: center;
 }
 
 .about {
   transition: transform 0.5s ease-out 0.75s;
+  align-items: center;
 }
 
 .about-box, .work-box {
+  flex: 1 1 0;
   background-color: white;
   box-shadow: 0 0 5px var(--medium-neutral-color);
   border-radius: 0.2rem;
 }
 
 .about-box {
-  padding: 1rem 5rem 1rem 1.5rem;
+  padding: 1rem 5.5rem 1rem 1.5rem;
 }
 
-.about-icon {
+.about-icon, .work-icon {
   z-index: 1;
-  width: 8rem;
-  margin-left: -5rem;
-  transform: rotate(10deg);
-  padding: 10px;
   background-color: white;
   border: var(--secondary-color) 3px solid;
   border-radius: 50%;
+  padding: 30px;
+  display: flex;
+}
+
+.about-icon {
+  margin-left: -5rem;
+  transform: rotate(10deg);
+}
+
+.about-icon img, .work-icon img {
+  width: 6rem;
 }
 
 .work {
   padding-top: 0;
   transition: transform 0.5s ease-out 1.25s;
+  align-items: flex-start;
+}
+
+.work-icon {
+  margin-top: 0.5rem;
+  margin-right: -5rem;
+  transform: rotate(-10deg);
 }
 
 .work-box {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 5.5rem;
 }
 
 .work-projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -118,4 +133,8 @@ header h1 {
   background-color: var(--secondary-color);
   box-shadow: 0 0 5px var(--medium-neutral-color);
   border-radius: 0.2rem;
+}
+
+.project-text {
+  background-color: white;
 }
