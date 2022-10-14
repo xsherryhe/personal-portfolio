@@ -49,7 +49,6 @@ header {
   background-color: var(--secondary-color);
   box-shadow: 0 0 5px var(--medium-neutral-color);
   display: flex;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -69,10 +68,9 @@ header h1 {
   align-items: center;
 }
 
-.headshot {
+.headshot, .footer-image {
   background-color: var(--light-neutral-color);
   object-fit: cover;
-  z-index: 1;
   box-shadow: 0 0 5px inset var(--medium-neutral-color);
   border-radius: 0.2rem;
   transition: transform 0.5s ease-out 0.25s;
@@ -199,4 +197,43 @@ header h1 {
 .project-text p {
   margin: 0.5rem 0 0.25rem;
   font-size: 0.85rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-text {
+  flex: 1 1 0;
+  background-color: var(--light-neutral-color);
+  box-shadow: 0 0 5px inset var(--medium-neutral-color);
+  border-radius: 0.2rem;
+  padding: 1rem;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text h2 {
+  margin: 0.5rem 0 0;
+}
+
+.footer-text .icon {
+  width: 2rem;
+}
+
+.footer-text .contacts {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.footer-text .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
