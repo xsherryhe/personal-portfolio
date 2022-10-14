@@ -12,12 +12,12 @@
   <header>
     <img class="headshot"
          sizes="35vh" 
-         srcset="images/avatar_headshot_200.png 200w,
-                 images/avatar_headshot_600.png 600w,
-                 images/avatar_headshot_872.png 872w,
-                 images/avatar_headshot_1195.png 1195w,
-                 images/avatar_headshot_1400.png 1400w" 
-         src="images/avatar_headshot_200.png" alt="">
+         srcset="images/avatar_headshot/avatar_headshot_200.png 200w,
+                 images/avatar_headshot/avatar_headshot_600.png 600w,
+                 images/avatar_headshot/avatar_headshot_872.png 872w,
+                 images/avatar_headshot/avatar_headshot_1195.png 1195w,
+                 images/avatar_headshot/avatar_headshot_1400.png 1400w" 
+         src="images/avatar_headshot/avatar_headshot_200.png" alt="Cartoon avatar of Sherry He">
     <h1>Hi, I'm Sherry</h1>
   </header>
   <section class="about">
@@ -28,59 +28,163 @@
         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="about-icon"><img src="images/clipboard-search.svg" alt=""></div>
+    <div class="icon about-icon"><img src="images/icons/clipboard-search.svg" alt=""></div>
   </section>
   <section class="work">
-    <div class="work-icon"><img src="images/computer.svg" alt=""></div>
+    <div class="icon work-icon"><img src="images/icons/computer.svg" alt=""></div>
     <div class="work-box">
       <h2>My Work</h2>
       <div class="work-projects">
         <div class="project">
-          <img src="" alt="" class="project-screenshot">
+          <div class="project-screenshot">
+            <a href="https://sleepy-springs-52383.herokuapp.com/" target="_blank">
+              <img
+                   sizes="(max-width: 320px) 200px, 1400px"
+                   srcset="images/clonebook/clonebook_200.png 200w,
+                           images/clonebook/clonebook_1400.png 1400w"
+                   src="images/clonebook/clonebook_200.png" alt="Preview of Clonebook webpage">
+            </a>
+          </div>
           <div class="project-text">
-            <h3>Project Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.</p>
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/facebook-clone" target="_blank">Clonebook</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/facebook-clone" target="_blank">
+                  <img src="images/icons/github.svg" alt="Github" class="icon github-icon">
+                </a>
+                <a href="https://sleepy-springs-52383.herokuapp.com/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A Facebook-like app, with functionalities core to Facebook such as profiles, friends, posts, likes, and
+            comments.</p>
           </div>
         </div>
         <div class="project">
-          <img src="" alt="" class="project-screenshot">
+          <div class="project-screenshot">
+            <a href="https://replit.com/@xsherryhe/chess" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 968px" 
+                   srcset="images/chess/chess_200.png 200w,
+                           images/chess/chess_968.png 968w" 
+                   src="images/chess/chess_200.png"
+                alt="Preview of Chess command line program">
+            </a>
+          </div>
           <div class="project-text">
-            <h3>Project Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.</p>
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/chess" target="_blank">Chess</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/chess" target="_blank">
+                  <img src="images/icons/github.svg" alt="Github" class="icon github-icon">
+                </a>
+                <a href="https://replit.com/@xsherryhe/chess" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A program that allows two human or computer players to play a game of chess on the command line.</p>
           </div>
         </div>
         <div class="project">
-          <img src="" alt="" class="project-screenshot">
+          <div class="project-screenshot">
+            <a href="https://xsherryhe.github.io/calculator/" target="_blank">
+              <img class="calculator-preview"
+                   sizes="(max-width: 320px) 200px, 1380px" 
+                   srcset="images/calculator/calculator_200.png 200w,
+                           images/calculator/calculator_1380.png 1380w" 
+                   src="images/calculator/calculator_200.png"
+                   alt="Preview of Calculator webpage">
+            </a>
+          </div>
           <div class="project-text">
-            <h3>Project Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.</p>
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/calculator" target="_blank">Calculator</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/calculator" target="_blank">
+                  <img src="images/icons/github.svg" alt="Github" class="icon github-icon">
+                </a>
+                <a href="https://xsherryhe.github.io/calculator/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A front-end calculator that performs simple math operations.</p>
           </div>
         </div>
         <div class="project">
-          <img src="" alt="" class="project-screenshot">
+          <div class="project-screenshot">
+            <a href="https://fathomless-thicket-95460.herokuapp.com/" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 951px" 
+                   srcset="images/events_central/events_central_200.png 200w,
+                           images/events_central/events_central_951.png 951w" 
+                   src="images/events_central/events_central_200.png"
+                alt="Preview of Events Central webpage">
+            </a>
+          </div>
           <div class="project-text">
-            <h3>Project Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.</p>
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/private-events" target="_blank">Events Central</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/private-events" target="_blank">
+                  <img src="images/icons/github.svg" alt="Github" class="icon github-icon">
+                </a>
+                <a href="https://fathomless-thicket-95460.herokuapp.com/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A website with similar functionality to Eventbrite. It allows users to create, manage, and sign up for events.</p>
           </div>
         </div>
         <div class="project">
-          <img src="" alt="" class="project-screenshot">
+          <div class="project-screenshot">
+            <a href="https://xsherryhe.github.io/etch-a-sketch/" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 1400px" 
+                   srcset="images/etch_a_sketch/etch_a_sketch_200.png 200w,
+                           images/etch_a_sketch/etch_a_sketch_1400.png 1400w"
+                   src="images/etch_a_sketch/etch_a_sketch_200.png" 
+                   alt="Preview of Etch-A-Sketch webpage">
+            </a>
+          </div>
           <div class="project-text">
-            <h3>Project Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.</p>
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/etch-a-sketch" target="_blank">Etch-A-Sketch</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/etch-a-sketch" target="_blank">
+                  <img src="images/icons/github.svg" alt="Github" class="icon github-icon">
+                </a>
+                <a href="https://xsherryhe.github.io/etch-a-sketch/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A webpage that allows users to manipulate a mock Etch-A-Sketch.</p>
           </div>
         </div>
         <div class="project">
-          <img src="" alt="" class="project-screenshot">
+          <div class="project-screenshot">
+            <a href="https://xsherryhe.github.io/sign-up-form/" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 740px" 
+                   srcset="images/sign_up_form/sign_up_form_200.png 200w,
+                           images/sign_up_form/sign_up_form_740.png 740w"
+                   src="images/sign_up_form/sign_up_form_200.png" 
+                   alt="Preview of Sign-Up Form webpage">
+            </a>
+          </div>
           <div class="project-text">
-            <h3>Project Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.</p>
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/sign-up-form" target="_blank">Sign-Up Form</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/sign-up-form" target="_blank">
+                  <img src="images/icons/github.svg" alt="Github" class="icon github-icon">
+                </a>
+                <a href="https://xsherryhe.github.io/sign-up-form/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A sample sign-up form using principles of responsive design.</p>
           </div>
         </div>
       </div>
