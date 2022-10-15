@@ -1,13 +1,13 @@
 function setStartingPositions() {
-  ['headshot', 'work']
+  ['headshot', 'tools']
     .forEach(elemClass => document.querySelector('.' + elemClass).classList.add('stage-left'));
-  ['about']
+  ['about', 'work']
     .forEach(elemClass => document.querySelector('.' + elemClass).classList.add('stage-right'));
 }
 setStartingPositions();
 
 function slideElements() {
-  ['headshot', 'about', 'work']
+  ['headshot', 'about', 'tools', 'work']
     .forEach(elemClass => document.querySelector('.' + elemClass).classList.remove('stage-left', 'stage-right'));
 }
 

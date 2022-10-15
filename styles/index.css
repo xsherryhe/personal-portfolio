@@ -36,6 +36,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.label {
+  margin: 0;
+}
+
 .stage-left {
   transform: translateX(-200%);
 }
@@ -76,7 +80,7 @@ header h1 {
   transition: transform 0.5s ease-out 0.25s;
 }
 
-.about, .work {
+.about, .tools, .work {
   display: flex;
 }
 
@@ -85,7 +89,7 @@ header h1 {
   align-items: center;
 }
 
-.about-box, .work-box {
+.about-box, .tools-box, .work-box {
   flex: 1 1 0;
   background-color: white;
   box-shadow: 0 0 5px var(--medium-neutral-color);
@@ -96,7 +100,7 @@ header h1 {
   padding: 1rem 4.5rem 1rem 1.5rem;
 }
 
-.about-icon, .work-icon {
+.about-icon, .tools-icon, .work-icon {
   z-index: 1;
   background-color: white;
   border: var(--secondary-color) 3px solid;
@@ -105,40 +109,95 @@ header h1 {
   display: flex;
 }
 
-.about-icon {
+.about-icon img, .tools-icon img, .work-icon img {
+  width: 5rem;
+}
+
+.about-icon, .work-icon {
   margin-left: -4rem;
   transform: rotate(10deg);
 }
 
-.about-icon img, .work-icon img {
-  width: 5rem;
-}
-
-.work {
+.tools {
   padding-top: 0;
   transition: transform 0.5s ease-out 1.25s;
   align-items: flex-start;
 }
 
-.work-icon {
+.tools-icon {
   margin-top: 0.5rem;
   margin-right: -4rem;
   transform: rotate(-10deg);
+}
+
+.tools-box {
+  padding: 1rem 1.5rem;
+}
+
+.tools-box > h2, .tools-box > p {
+  padding-left: 3rem;
+}
+
+.tools-box > p {
+  margin-bottom: 0.5rem;
+}
+
+.tools-list {
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: repeat(4, max-content); 
+  justify-content: space-evenly;
+  gap: 1rem;
+  border-radius: 0.2rem;
+  padding: 1rem;
+} 
+
+.tool {
+  min-width: 6rem;
+  min-height: 6rem;
+  width: 12vw;
+  height: 12vw;
+  background-color: white;
+  box-shadow: 0 0 5px var(--medium-neutral-color);
+  border-radius: 0.2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tool .icon {
+  min-width: 4.5rem;
+  width: 10vw;
+}
+
+.tool:hover {
+  text-decoration: none;
+  background-color: var(--light-neutral-color);
+}
+
+.work {
+  padding-top: 0;
+  transition: transform 0.5s ease-out 1.75s;
+  align-items: flex-start;
+}
+
+.work-icon {
+  margin-top: 0.5rem;
 }
 
 .work-box {
   padding: 1.5rem;
 }
 
-.work-box h2 {
-  padding-left: 3rem;
-}
-
 .work-projects {
+  max-width: min(100%, 76rem);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   grid-auto-rows: 1fr;
   gap: 1.5rem;
+  margin: auto;
 }
 
 .project {
