@@ -345,7 +345,11 @@ footer {
 
 @media (max-width: 800px) {
   .tools-list {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tool {
+    width: auto;
   }
 }
 
@@ -354,17 +358,26 @@ footer {
     font-size: 12px;
   }
 
+  body {
+    font-size: 1.5rem;
+  }
+
   header, footer {
     flex-direction: column-reverse;
   }
 
-  .about-icon {
-    margin-top: 0.5rem;
+  .about, .tools, .work {
+    position: relative;
   }
 
   .about-icon,
   .tools-icon,
   .work-icon {
+    position: absolute;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    right: 2rem;
     padding: 10px;
   }
 
@@ -374,12 +387,46 @@ footer {
     width: 4rem;
   }
 
-  .about-box {
-    padding-right: 4rem;
+  .about-box, .tools-box, .work-box {
+    padding: 1rem 1.5rem;
+  }
+
+  .tools-list {
+    grid-template-columns: repeat(4, max-content);
+  }
+
+  .tools-box > h2, .tools-box > p {
+    padding: 0;
+  }
+
+  .project {
+    max-height: 22rem;
+  }
+
+  .project-heading {
+    font-size: 1.25rem;
+  }
+
+  .project-text p {
+    font-size: 1.1rem;
+  }
+
+  .footer-text .contact-label {
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 500px) {
+  .tools-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tool {
+    width: auto;
+  }
+}
+
+@media (max-width: 425px) {
   header h1 {
     font-size: 3rem;
   }
