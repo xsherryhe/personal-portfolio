@@ -6,9 +6,17 @@ function setStartingPositions() {
 }
 setStartingPositions();
 
-function slideElements() {
-  ['headshot', 'about', 'tools', 'work']
-    .forEach(elemClass => document.querySelector('.' + elemClass).classList.remove('stage-left', 'stage-right'));
+//function slideElements() {
+  //['headshot', 'about', 'tools', 'work']
+    //.forEach(elemClass => document.querySelector('.' + elemClass).classList.remove('stage-left', 'stage-right'));
+//}
+
+//window.addEventListener('load', slideElements);
+
+function removeStartingPositions(e) {
+  e.target.classList.remove('stage-left', 'stage-right');
 }
 
-window.addEventListener('load', slideElements);
+['headshot', 'about', 'tools', 'work'].forEach(elemClass => {
+  document.querySelector('.' + elemClass).addEventListener('animationend', removeStartingPositions);
+})

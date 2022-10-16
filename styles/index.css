@@ -4,6 +4,26 @@
   font-weight: 1 999;
 }
 
+@keyframes slide-right {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 :root {
   --site-font: 'Figtree';
   --secondary-color: #caebf2;
@@ -78,16 +98,21 @@ header h1 {
   object-fit: cover;
   box-shadow: 0 0 5px inset var(--medium-neutral-color);
   border-radius: 0.2rem;
-  transition: transform 0.5s ease-out 0.25s;
+}
+
+.headshot {
+  z-index: 1;
+  animation: slide-right 0.5s ease-out 0.25s;
 }
 
 .about, .tools, .work {
+  z-index: 1;
   display: flex;
   align-items: flex-start;
 }
 
 .about {
-  transition: transform 0.5s ease-out 0.75s;
+  animation: slide-left 0.5s ease-out 0.75s;
 }
 
 .about-box, .tools-box, .work-box {
@@ -103,7 +128,7 @@ header h1 {
 
 .about-icon, .tools-icon, .work-icon {
   margin-top: 0.5rem;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
   border: var(--secondary-color) 3px solid;
   border-radius: 50%;
@@ -126,7 +151,7 @@ header h1 {
 
 .tools {
   padding-top: 0;
-  transition: transform 0.5s ease-out 1.25s;
+  animation: slide-right 0.5s ease-out 1.25s;
 }
 
 .tools-icon {
@@ -184,7 +209,7 @@ header h1 {
 
 .work {
   padding-top: 0;
-  transition: transform 0.5s ease-out 1.75s;
+  animation: slide-left 0.5s ease-out 1.75s;
 }
 
 .work-box {
