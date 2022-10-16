@@ -70,6 +70,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .headshot, .footer-image {
@@ -82,11 +83,11 @@ header h1 {
 
 .about, .tools, .work {
   display: flex;
+  align-items: flex-start;
 }
 
 .about {
   transition: transform 0.5s ease-out 0.75s;
-  align-items: center;
 }
 
 .about-box, .tools-box, .work-box {
@@ -101,6 +102,7 @@ header h1 {
 }
 
 .about-icon, .tools-icon, .work-icon {
+  margin-top: 0.5rem;
   z-index: 1;
   background-color: white;
   border: var(--secondary-color) 3px solid;
@@ -121,11 +123,9 @@ header h1 {
 .tools {
   padding-top: 0;
   transition: transform 0.5s ease-out 1.25s;
-  align-items: flex-start;
 }
 
 .tools-icon {
-  margin-top: 0.5rem;
   margin-right: -4rem;
   transform: rotate(-10deg);
 }
@@ -153,10 +153,10 @@ header h1 {
 } 
 
 .tool {
-  min-width: 6rem;
-  min-height: 6rem;
-  width: 12vw;
-  height: 12vw;
+  min-width: 5.5rem;
+  min-height: 5.5rem;
+  width: 10vw;
+  height: 10vw;
   background-color: white;
   box-shadow: 0 0 5px var(--medium-neutral-color);
   border-radius: 0.2rem;
@@ -165,11 +165,12 @@ header h1 {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .tool .icon {
   min-width: 4.5rem;
-  width: 10vw;
+  width: 8vw;
 }
 
 .tool:hover {
@@ -180,11 +181,6 @@ header h1 {
 .work {
   padding-top: 0;
   transition: transform 0.5s ease-out 1.75s;
-  align-items: flex-start;
-}
-
-.work-icon {
-  margin-top: 0.5rem;
 }
 
 .work-box {
@@ -270,7 +266,6 @@ footer {
   box-shadow: 0 0 5px inset var(--medium-neutral-color);
   border-radius: 0.2rem;
   padding: 1rem;
-  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,4 +312,52 @@ footer {
 
 .footer-text .external-contact .icon {
   width: 2rem;
+}
+
+@media (max-width: 800px) {
+  .tools-list {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 12px;
+  }
+
+  header, footer {
+    flex-direction: column-reverse;
+  }
+
+  .about-icon {
+    margin-top: 0.5rem;
+  }
+
+  .about-icon,
+  .tools-icon,
+  .work-icon {
+    padding: 10px;
+  }
+
+  .about-icon img,
+  .tools-icon img,
+  .work-icon img {
+    width: 4rem;
+  }
+
+  .about-box {
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  header h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 24px;
+  }
 }
