@@ -325,12 +325,12 @@ footer {
 }
 
 @media (max-width: 575px) {
-  html {
-    font-size: 12px;
-  }
-
   header, footer {
     flex-direction: column-reverse;
+  }
+
+  header h1 {
+    font-size: 3rem;
   }
 
   .about-icon {
@@ -351,12 +351,6 @@ footer {
 
   .about-box {
     padding-right: 4rem;
-  }
-}
-
-@media (max-width: 425px) {
-  header h1 {
-    font-size: 4rem;
   }
 }
 
