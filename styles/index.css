@@ -294,7 +294,7 @@ footer {
   background-color: var(--light-neutral-color);
   box-shadow: 0 0 5px inset var(--medium-neutral-color);
   border-radius: 0.2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,6 +304,10 @@ footer {
 .footer-text h2 {
   margin: 0.5rem 0 0;
   text-align: center;
+}
+
+.footer-text .intro-text {
+  margin: 1rem 0;
 }
 
 .footer-text .contact-label {
@@ -326,7 +330,7 @@ footer {
 }
 
 .footer-text .external-contacts {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   display: flex;
   gap: 4rem;
   justify-content: center;
@@ -403,16 +407,17 @@ footer {
     max-height: 22rem;
   }
 
+  .project-screenshot {
+    flex: 2 2 0;
+    max-height: 50%;
+  }
+
   .project-heading {
     font-size: 1.25rem;
   }
 
-  .project-text p {
-    font-size: 1.1rem;
-  }
-
-  .footer-text .contact-label {
-    font-size: 1.1rem;
+  .project-text p, .footer-text .contact-label {
+    font-size: 1.25rem;
   }
 }
 
