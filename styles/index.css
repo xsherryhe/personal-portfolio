@@ -404,7 +404,7 @@ footer {
   }
 
   .project {
-    max-height: 22rem;
+    max-height: 22.5rem;
   }
 
   .project-screenshot {
@@ -416,8 +416,24 @@ footer {
     font-size: 1.25rem;
   }
 
+  .project-heading .icons {
+    gap: 1.25rem;
+  }
+
+  .project-heading .icon {
+    width: 1.8rem;
+  }
+
   .project-text p, .footer-text .contact-label {
     font-size: 1.25rem;
+  }
+
+  .footer-text .contact-detail {
+    gap: 0.35rem;
+  }
+
+  .footer-text .contact-detail .icon {
+    width: 1.5rem;
   }
 }
 
