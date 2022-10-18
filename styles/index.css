@@ -430,6 +430,10 @@ footer {
     font-size: 1.25rem;
   }
 
+  .footer-text-container {
+    padding: 1.5rem 1rem;
+  }
+
   .footer-text .contact-detail {
     gap: 0.35rem;
   }
