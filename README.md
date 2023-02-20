@@ -1,1 +1,1 @@
-This repository holds the source code for my personal portfolio. It currently consists of a webpage providing general information and previews of my previous projects.
+This repository currently holds the same code as my [personal portfolio repository](https://github.com/xsherryhe/personal-portfolio). It exists to allow my personal portfolio to be hosted on my user page.
