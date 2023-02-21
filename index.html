@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
   <script defer src="scripts/transitions.js"></script>
-  <title>Sherry's Portfolio</title>
+  <title>Sherry He</title>
 </head>
 <body>
   <header>
@@ -38,9 +42,8 @@
         I got into tech and web development after realizing how much I enjoy problem-solving and using my knowledge to create things. 
         My favorite part of this field is how natural it feels to enter a state of <a href="https://www.verywellmind.com/what-is-flow-2794768" target="_blank">flow</a> and code for hours. 
         It makes it easy to be persistent, stay logical, and maintain a <a href="https://www.youtube.com/watch?v=KUWn_TJTrnU" target="_blank">growth mindset</a>.</p>
-      <p>I've been learning primarily through <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>, an excellent full-stack web development curriculum.
-        Other learning resources that I use intensively include <a href="https://www.codewars.com/" target="_blank">Codewars</a>, <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>, and all the official docs for my chosen tools and technologies. 
-        The universe of web development is wide and varied, and I hope I can keep exploring and discovering new things!</p>
+      <p>I like to sharpen my skills by building lots of things! I always have a personal project going on, and many ideas for future projects as well. 
+        Check out <a href="https://github.com/xsherryhe" target="_blank">my GitHub</a> if you're curious about what I've been working on lately. The universe of web development is wide and varied, and I hope I can keep exploring and discovering!</p>
     </div>
     <div class="icon about-icon"><img src="images/icons/clipboard-search.svg" alt=""></div>
   </section>
@@ -51,14 +54,6 @@
       <h2>My Tools</h2>
       <p class="intro-text">Take a peek at some of my web development tools.</p>
       <div class="tools-list">
-        <a class="tool" href="https://code.visualstudio.com/">
-          <img src="images/icons/vscode.svg" alt="" class="icon vscode-icon">
-          <p class="label tool-label">VS Code</p>
-        </a>
-        <a class="tool" href="https://git-scm.com/">
-          <img src="images/icons/git.svg" alt="" class="icon git-icon">
-          <p class="label tool-label">Git</p>
-        </a>
         <a class="tool" href="https://en.wikipedia.org/wiki/HTML5">
           <img src="images/icons/html5.svg" alt="" class="icon html5-icon">
           <p class="label tool-label">HTML</p>
@@ -71,6 +66,14 @@
           <img src="images/icons/javascript.svg" alt="" class="icon javascript-icon">
           <p class="label tool-label">JavaScript</p>
         </a>
+        <a class="tool" href="https://reactjs.org/">
+          <img src="images/icons/react.svg" alt="" class="icon react-icon">
+          <p class="label tool-label">React</p>
+        </a>
+        <a class="tool" href="https://webpack.js.org/">
+          <img src="images/icons/webpack.svg" alt="" class="icon webpack-icon">
+          <p class="label tool-label">Webpack</p>
+        </a>
         <a class="tool" href="https://www.ruby-lang.org/">
           <img src="images/icons/ruby.svg" alt="" class="icon ruby-icon">
           <p class="label tool-label">Ruby</p>
@@ -82,6 +85,14 @@
         <a class="tool" href="https://www.postgresql.org/">
           <img src="images/icons/postgresql.svg" alt="" class="icon postgresql-icon">
           <p class="label tool-label">SQL</p>
+        </a>
+        <a class="tool" href="https://git-scm.com/">
+          <img src="images/icons/git.svg" alt="" class="icon git-icon">
+          <p class="label tool-label">Git</p>
+        </a>
+        <a class="tool" href="https://code.visualstudio.com/">
+          <img src="images/icons/vscode.svg" alt="" class="icon vscode-icon">
+          <p class="label tool-label">VS Code</p>
         </a>
       </div>
     </div>
@@ -119,6 +130,31 @@
         </div>
         <div class="project">
           <div class="project-screenshot">
+            <a href="https://xsherryhe.github.io/wheres-waldo/" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 809px" 
+                   srcset="images/wheres_everything/wheres_everything_200.png 200w,
+                           images/wheres_everything/wheres_everything_809.png 809w" 
+                   src="images/wheres_everything/wheres_everything_200.png"
+                alt="Preview of Where's Everything? webpage">
+            </a>
+          </div>
+          <div class="project-text">
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/wheres-waldo" target="_blank">Where's Everything?</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/wheres-waldo" target="_blank">
+                  <img src="images/icons/github.svg" alt="GitHub" class="icon github-icon">
+                </a>
+                <a href="https://xsherryhe.github.io/wheres-waldo/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A photo-tagging game app in the style of Where's Waldo?.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-screenshot">
             <a href="https://replit.com/@xsherryhe/chess" target="_blank">
               <img sizes="(max-width: 320px) 200px, 968px" 
                    srcset="images/chess/chess_200.png 200w,
@@ -144,28 +180,76 @@
         </div>
         <div class="project">
           <div class="project-screenshot">
-            <a href="https://xsherryhe.github.io/calculator/" target="_blank">
-              <img class="calculator-preview"
-                   sizes="(max-width: 320px) 200px, 1380px" 
-                   srcset="images/calculator/calculator_200.png 200w,
-                           images/calculator/calculator_1380.png 1380w" 
-                   src="images/calculator/calculator_200.png"
-                   alt="Preview of Calculator webpage">
+            <a href="https://xsherryhe.github.io/weather-app/" target="_blank">
+              <img class="weather-app-preview"
+                   sizes="(max-width: 320px) 200px, 979px" 
+                   srcset="images/weather_app/weather_app_200.png 200w,
+                           images/weather_app/weather_app_979.png 979w" 
+                   src="images/weather_app/weather_app_200.png"
+                   alt="Preview of Weather App webpage">
             </a>
           </div>
           <div class="project-text">
             <div class="project-heading">
-              <h3><a href="https://github.com/xsherryhe/calculator" target="_blank">Calculator</a></h3>
+              <h3><a href="https://github.com/xsherryhe/weather-app" target="_blank">Weather App</a></h3>
               <div class="icons">
-                <a href="https://github.com/xsherryhe/calculator" target="_blank">
+                <a href="https://github.com/xsherryhe/weather_app" target="_blank">
                   <img src="images/icons/github.svg" alt="GitHub" class="icon github-icon">
                 </a>
-                <a href="https://xsherryhe.github.io/calculator/" target="_blank">
+                <a href="https://xsherryhe.github.io/weather-app/" target="_blank">
                   <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
                 </a>
               </div>
             </div>
-            <p>A front-end calculator that performs simple math operations.</p>
+            <p>An app that displays weather forecasts for cities around the world.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-screenshot">
+            <a href="https://xsherryhe.github.io/browser-tic-tac-toe/" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 1400px" 
+                   srcset="images/tic_tac_toe/tic_tac_toe_200.png 200w,
+                           images/tic_tac_toe/tic_tac_toe_1400.png 1400w"
+                   src="images/tic_tac_toe/tic_tac_toe_200.png" alt="Preview of Tic-Tac-Toe webpage">
+            </a>
+          </div>
+          <div class="project-text">
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/browser-tic-tac-toe" target="_blank">Tic-Tac-Toe</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/browser-tic-tac-toe" target="_blank">
+                  <img src="images/icons/github.svg" alt="GitHub" class="icon github-icon">
+                </a>
+                <a href="https://xsherryhe.github.io/browser-tic-tac-toe/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A tic-tac-toe game playable with human or computer players. It integrates AI move selection via a minimax algorithm.
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-screenshot">
+            <a href="https://xsherryhe.github.io/memory-card-game/" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 778px" srcset="images/space_donuts/space_donuts_200.png 200w,
+                                   images/space_donuts/space_donuts_778.png 778w"
+                src="images/space_donuts/space_donuts_200.png" alt="Preview of Space Donuts webpage">
+            </a>
+          </div>
+          <div class="project-text">
+            <div class="project-heading">
+              <h3><a href="https://github.com/xsherryhe/memory-card-game" target="_blank">Space Donuts</a></h3>
+              <div class="icons">
+                <a href="https://github.com/xsherryhe/memory-card-game" target="_blank">
+                  <img src="images/icons/github.svg" alt="GitHub" class="icon github-icon">
+                </a>
+                <a href="https://xsherryhe.github.io/memory-card-game/" target="_blank">
+                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
+                </a>
+              </div>
+            </div>
+            <p>A memory game in which the player's goal is to never click the same card twice.</p>
           </div>
         </div>
         <div class="project">
@@ -195,52 +279,27 @@
         </div>
         <div class="project">
           <div class="project-screenshot">
-            <a href="https://xsherryhe.github.io/etch-a-sketch/" target="_blank">
-              <img sizes="(max-width: 320px) 200px, 1400px" 
-                   srcset="images/etch_a_sketch/etch_a_sketch_200.png 200w,
-                           images/etch_a_sketch/etch_a_sketch_1400.png 1400w"
-                   src="images/etch_a_sketch/etch_a_sketch_200.png" 
-                   alt="Preview of Etch-A-Sketch webpage">
+            <a href="https://xsherryhe.github.io/restaurant-homepage/" target="_blank">
+              <img sizes="(max-width: 320px) 200px, 806px" 
+                   srcset="images/crepes_on_a_cloud/crepes_on_a_cloud_200.png 200w,
+                           images/crepes_on_a_cloud/crepes_on_a_cloud_806.png 806w"
+                   src="images/crepes_on_a_cloud/crepes_on_a_cloud_200.png" 
+                   alt="Preview of Crepes on a Cloud webpage">
             </a>
           </div>
           <div class="project-text">
             <div class="project-heading">
-              <h3><a href="https://github.com/xsherryhe/etch-a-sketch" target="_blank">Etch-A-Sketch</a></h3>
+              <h3><a href="https://github.com/xsherryhe/restaurant-homepage" target="_blank">Crepes on a Cloud</a></h3>
               <div class="icons">
-                <a href="https://github.com/xsherryhe/etch-a-sketch" target="_blank">
+                <a href="https://github.com/xsherryhe/restaurant-homepage" target="_blank">
                   <img src="images/icons/github.svg" alt="GitHub" class="icon github-icon">
                 </a>
-                <a href="https://xsherryhe.github.io/etch-a-sketch/" target="_blank">
+                <a href="https://xsherryhe.github.io/restaurant-homepage/" target="_blank">
                   <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
                 </a>
               </div>
             </div>
-            <p>A webpage that allows users to manipulate a mock Etch-A-Sketch.</p>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-screenshot">
-            <a href="https://xsherryhe.github.io/sign-up-form/" target="_blank">
-              <img sizes="(max-width: 320px) 200px, 740px" 
-                   srcset="images/sign_up_form/sign_up_form_200.png 200w,
-                           images/sign_up_form/sign_up_form_740.png 740w"
-                   src="images/sign_up_form/sign_up_form_200.png" 
-                   alt="Preview of Sign-Up Form webpage">
-            </a>
-          </div>
-          <div class="project-text">
-            <div class="project-heading">
-              <h3><a href="https://github.com/xsherryhe/sign-up-form" target="_blank">Sign-Up Form</a></h3>
-              <div class="icons">
-                <a href="https://github.com/xsherryhe/sign-up-form" target="_blank">
-                  <img src="images/icons/github.svg" alt="GitHub" class="icon github-icon">
-                </a>
-                <a href="https://xsherryhe.github.io/sign-up-form/" target="_blank">
-                  <img src="images/icons/open-preview.svg" alt="Preview" class="icon preview-icon">
-                </a>
-              </div>
-            </div>
-            <p>A sample sign-up form using various CSS design principles.</p>
+            <p>A stylish info website for a mock restaurant.</p>
           </div>
         </div>
       </div>
@@ -263,31 +322,40 @@
             <p class="label contact-label">(510) 456-6287</p>
           </div>
           <div class="contact-detail">
-            <img src="images/icons/email.svg" alt="Email" class="icon email-icon">
+            <img src="images/icons/email-red.svg" alt="Email" class="icon email-icon">
             <p class="label contact-label">xsherryhe.dev@gmail.com</p>
           </div>
         </div>
         <div class="external-contacts">
-          <div class="external-contact">
-            <a class="icon-link" href="https://github.com/xsherryhe" target="_blank">
-              <img src="images/icons/github-red.svg" alt="" class="icon github-icon">
-            </a>
-            <a href="https://github.com/xsherryhe" target="_blank" class="label contact-label">GitHub</a>
-          </div>
-          <div class="external-contact">
-            <a class="icon-link" href="https://www.linkedin.com/in/sherry-he-037942a7/" target="_blank">
-              <img src="images/icons/linkedin-red.svg" alt="" class="icon linkedin-icon">
-            </a>
-            <a href="https://www.linkedin.com/in/sherry-he-037942a7/" target="_blank" class="label contact-label">LinkedIn</a>
-          </div>
-          <div class="external-contact">
-            <a class="icon-link" href="mailto:xsherryhe.dev@gmail.com" target="_blank">
+          <a class="external-contact-link" href="https://github.com/xsherryhe" target="_blank">
+            <div class="external-contact">
+              <img src="images/icons/github.svg" alt="" class="icon github-icon">
+              <span class="label contact-label">GitHub</span>
+            </div>
+          </a>
+          <a class="external-contact-link" href="https://www.linkedin.com/in/sherry-he-037942a7/" target="_blank">
+            <div class="external-contact">
+              <img src="images/icons/linkedin.svg" alt="" class="icon linkedin-icon">
+              <span class="label contact-label">LinkedIn</span>
+            </div>
+          </a>
+          <a class="external-contact-link" href="mailto:xsherryhe.dev@gmail.com" target="_blank">
+            <div class="external-contact">
               <img src="images/icons/email.svg" alt="" class="icon email-icon">
-            </a>
-            <a href="mailto:xsherryhe.dev@gmail.com" target="_blank" class="label contact-label">Email</a>
-          </div>
+              <span class="label contact-label">Email</span>
+            </div>
+          </a>
+          <a class="external-contact-link" href="files/Sherry-He-Developer-Resume.pdf" download>
+            <div class="external-contact">
+              <img src="images/icons/resume.svg" alt="" class="icon resume-icon">
+              <span class="label contact-label">Resume</span>
+            </div>
+          </a>
         </div>
       </div>
+    </div>
+    <div class="footer-logo-container">
+      <div class="footer-logo">sh</div>
     </div>
     <img class="footer-image"
          sizes="(max-width: 575px) 100vw, 25vw"
